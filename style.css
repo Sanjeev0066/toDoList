@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* border: solid black 2px; */
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(135deg,green,white);
+    padding: 50px;
+    justify-content: center;
+}   
+
+.toDo-app{
+    /* border: solid rgb(228, 20, 20) 2px; */
+    height: auto;
+    width: 90%; 
+    background-color: rgb(145, 188, 166);
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* margin-top: 100px; */
+    /* margin-left: 200px; */
+    /* position: absolute; */
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    
+/* left: 40%; */
+}
+
+.toDo-app h2 img {
+    /* position: absolute; /* Position the image absolutely within the container */
+    width: 50px; /* Allow the width to adjust according to the container */
+    height: 25px; /* Allow the height to adjust according to the container */
+    margin-left: 10px;
+    
+    /* max-width: 100%; Ensure the image does not exceed the width of the container */
+    /* max-height: 100%; Ensure the image does not exceed the height of the container */ 
+    /* top: 50%; Position the image vertically at 50% of the container */
+    /* right: 0%; Position the image horizontally at 50% of the container */
+    /* transform: translate(-50%, -50%);Center the image within the container */
+    }
+
+  .toDo-app h2 {
+    display: flex;
+    
+    /* align-items: center; */
+    margin-left: 10px;
+    margin-top: 40px;
+    /* justify-content: center; */
+  }
+
+  .row{
+    /* border: solid blue 2px; */
+    background-color: antiquewhite;
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    /* align-items: center; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 14px;
+    padding: 10px;
+    width: 60%;
+}
+button{
+    
+    border: none;
+    outline: none;
+    background: rgb(32, 20, 2);
+    color: rgb(210, 105, 30);
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 20px 40px;
+}
+ul{
+    position: relative;
+    text-align: center;
+    /* border: solid black 1px; */
+    padding: 10px;
+    margin: 5px;
+    overflow: auto;
+    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 08px;
+    width: 08px;
+    border-radius: 50%;
+    border: solid black 2px;
+    padding: 3px;
+    /* margin-right: 50px; */
+    /* margin-right: 50px; */
+    /* margin-left: 10px; */
+    /* margin-top: 5px; */
+    /* display: flex; */
+    left: -20px;
+    padding-left: 2px;
+}
+    ul li{
+        position: relative;
+        height: 30px;
+        margin-left: 50px;
+        margin-top: 5px;
+        list-style: none;
+        display:flex;
+        /* justify-content: flex-start; */
+        /* padding: 2px; */
+        
+    /* text-align: center; */
+    /* border: solid black 2px; */
+    /* padding: 5px; */
+    }
+    
+    
+
+ul li.checked{
+    text-decoration: line-through;
+    color:rgb(210, 105, 30);;
+}
+
+ul li.checked::before{
+    background-color: rgb(210, 105, 30);
+}
+
+ul li span{
+    /* border: solid black 2px; */
+    position: absolute;
+    /* display: flex; */
+    right: 0%;
+    text-align: center;
+    width: 30px;
+    /* height: 40px; */
+    font-size: 20px;
+    color: brown;
+    /* background-color: aliceblue; */
+    padding: 0;
+    border-radius: 30%;
+    /* margin-left: 50px; */
+    
+}
+ul li span:hover{
+    background-color: blueviolet;
+}
